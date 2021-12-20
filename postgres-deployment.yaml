@@ -23,7 +23,7 @@ spec:
                 name: postgres-config
           volumeMounts:
             - mountPath: /Users/yura/k8s/postgres_storage
-              name: posgres_volume
+              name: postgres_volume
       volumes:
         - name: postgresdb
           persistentVolumeClaim:
