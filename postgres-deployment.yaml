@@ -25,6 +25,6 @@ spec:
             - mountPath: /Users/yura/k8s/postgres_storage
               name: posgres_volume
       volumes:
-        - name: postgres
+        - name: postgresdb
           persistentVolumeClaim:
             claimName: postgres-pv-claim
