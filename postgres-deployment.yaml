@@ -22,8 +22,8 @@ spec:
             - configMapRef:
                 name: postgres-config
           volumeMounts:
-            - mountPath: /Users/yura/k8s/postgres_storage
-              name: postgres_volume
+            - mountPath: /Users/yura/k8s/postgres_data
+              name: postgresdb
       volumes:
         - name: postgresdb
           persistentVolumeClaim:
